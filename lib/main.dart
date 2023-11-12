@@ -3,8 +3,15 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp( const InitialWidget() );
+}
+
+class InitialWidget extends StatelessWidget {
+  const InitialWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title:  const Center(
@@ -18,6 +25,6 @@ void main() {
           ),
           backgroundColor: colors['bg']
       )
-    )
-  );
+    );
+  }
 }
