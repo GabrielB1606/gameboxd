@@ -14,12 +14,18 @@ class PrimaryButtonLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 72,
+      height: 60,
       width: 320.0,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(1024),
         gradient: LinearGradient(
-          colors: [colors['primary']!, Colors.white, Colors.red], // Adjust colors as needed
+          colors: [
+            colors['primary']!,
+            const Color.fromARGB(0, 255, 255, 255),
+            const Color.fromARGB(207, 255, 126, 188),
+            const Color.fromARGB(207, 251, 4, 123),
+            const Color.fromARGB(255, 255, 44, 247),
+          ], // Adjust colors as needed
           begin: Alignment.bottomLeft,
           end: Alignment.topRight,
         ),
@@ -42,8 +48,8 @@ class PrimaryButtonLogin extends StatelessWidget {
             label,
             style: const TextStyle(
               color: Colors.white,
-              fontWeight: FontWeight.w800,
-              fontSize: 28  
+              fontWeight: FontWeight.w700,
+              fontSize: 24  
             ),
           ),
         ),
