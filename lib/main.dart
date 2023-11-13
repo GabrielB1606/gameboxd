@@ -49,11 +49,13 @@ class InitialWidget extends StatelessWidget {
                 const Image(image: AssetImage('images/gameboxd_stamp.png')),
                 PrimaryButtonLogin(
                   label: "Sign up with Google",
-                  onPressed: (){}
+                  onPressed: (){},
+                  textStyle: const TextStyle(),
                 ),
                 PrimaryButtonLogin(
                   label: "Create account",
-                  onPressed: (){}
+                  onPressed: (){},
+                  textStyle: const TextStyle(),
                 )
               ],
             ), 

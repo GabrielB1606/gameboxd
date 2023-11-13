@@ -4,11 +4,13 @@ import 'colors.dart';
 class PrimaryButtonLogin extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;
+  final TextStyle textStyle;
 
   const PrimaryButtonLogin({
     super.key,
     required this.label,
     required this.onPressed,
+    required this.textStyle
   });
 
   @override
@@ -50,7 +52,7 @@ class PrimaryButtonLogin extends StatelessWidget {
               color: Colors.white,
               fontWeight: FontWeight.w700,
               fontSize: 24  
-            ),
+            ).merge(textStyle) ,
           ),
         ),
       ),
